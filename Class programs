@@ -1,0 +1,21 @@
+class Main {
+    public static void main (String[] args) {
+        int tomato=36;
+        float rice=45.50f;
+        int onion=20;
+        int qty_tomato=5;
+        int qty_rice=2;
+        int qty_onion=5;
+        int price_tomato=qty_tomato*tomato;
+        float price_rice=qty_rice*rice;
+        int price_onion=qty_onion*onion;
+        float gt=price_rice+price_tomato+price_onion;
+         System.out.println("----------------------------------------------------");
+         System.out.println("\t\t\t\t\tBILL");
+        System.out.println("----------------------------------------------------");
+        System.out.println("'Tomato' "+"|Price per kg: "+tomato+" |Quantity: "+qty_tomato+" |Total: "+price_tomato);
+        System.out.println("'Rice' "+"|Price per kg: "+rice+" |Quantity: "+qty_rice+" |Total: "+price_rice);
+        System.out.println("'Onion' "+"|Price per kg: "+onion+" |Quantity: "+qty_onion+" |Total: "+price_onion);
+         System.out.println("----------------------------------------------------");
+        System.out.println("'Grand Total:' "+gt);
+         System.out.println("----------------------------------------------------")
