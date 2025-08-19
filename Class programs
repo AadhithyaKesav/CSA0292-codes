@@ -19,4 +19,6 @@ class Main {
         System.out.println("'Onion' "+"|Price per kg: "+onion+" |Quantity: "+qty_onion+" |Total: "+price_onion);
          System.out.println("----------------------------------------------------");
         System.out.println("'Grand Total:' "+gt);
-         System.out.println("----------------------------------------------------")
+         System.out.println("----------------------------------------------------");
+    }
+}
