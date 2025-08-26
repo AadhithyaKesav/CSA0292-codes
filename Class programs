@@ -247,8 +247,31 @@ public class CountVowels {
     }
 }
 
+Perfect number
+public class Main {
+    public static void main(String[] args) {
+        int n = 3; // Number of perfect numbers to find
+        int count = 0; // Count of perfect numbers found
 
+        // Check numbers starting from 2 upwards until we find n perfect numbers
+        for (int num = 2; count < n; num++) {
+            int sum = 0;
 
+            // Find sum of divisors of num
+            for (int i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    sum += i;
+                }
+            }
+
+            // Check if the number is perfect
+            if (sum == num) {
+                System.out.println(num);
+                count++;
+            }
+        }
+    }
+}
 
 
 
