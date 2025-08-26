@@ -126,6 +126,126 @@ public class SkipCount {
     }
 }
 
+String rev = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            rev += str.charAt(i);
+        }
+        System.out.println("Reversed (Loop): " + rev);
+
+
+   Integer num2 = Integer.valueOf(str);
+        System.out.println("Using valueOf: " + num2);
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Username:");
+        String un = sc.nextLine();   // Read string input
+
+        System.out.println("Re-enter Username:");
+        String un2 = sc.nextLine();  // Read string input again
+
+        if (un.equals(un2)) {        // Compare content of strings
+            System.out.println("Ok");
+        } else {
+            System.out.println("Retry");
+        }
+
+        sc.close();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Get username inputs
+        System.out.print("Enter the user name: ");
+        String username1 = sc.nextLine();
+
+        System.out.print("Reenter the user name: ");
+        String username2 = sc.nextLine();
+
+        // Compare
+        if (username1.equals(username2)) {
+            System.out.println("\t  User name is Valid");
+        } else {
+            System.out.println("\t  User name is Invalid");
+        }
+
+        sc.close();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class SpecialCharacters {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input
+        System.out.print("Enter a line: ");
+        String line = sc.nextLine();
+
+        String specials = "";
+        int count = 0;
+
+        // Check each character
+        for (int i = 0; i < line.length(); i++) {
+            char ch = line.charAt(i);
+
+            // If not letter, not digit, and not space => special character
+            if (!Character.isLetterOrDigit(ch) && !Character.isWhitespace(ch)) {
+                specials += ch + " ";
+                count++;
+            }
+        }
+
+        // Output
+        System.out.println("Special characters: " + specials);
+        System.out.println("Number of special characters: " + count);
+
+        sc.close();
+    }
+}
+
+
+import java.util.Scanner;
+
+public class CountVowels {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input
+        System.out.print("Enter a line: ");
+        String line = sc.nextLine();
+
+        int count = 0;
+
+        // Convert to lowercase for easy checking
+        line = line.toLowerCase();
+
+        // Check each character
+        for (int i = 0; i < line.length(); i++) {
+            char ch = line.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+
+        // Output
+        System.out.println("Number of vowels: " + count);
+
+        sc.close();
+    }
+}
 
 
 
